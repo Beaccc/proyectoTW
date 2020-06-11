@@ -47,7 +47,6 @@ if($res) {
     $descripcion = "'El usuario $idautor ha insertado la receta " . $_POST["titulo"] . "'";
     $date = date('Y-m-d H:i:s');
     $sql = "INSERT INTO log VALUES (null,'$date',$descripcion)";
-    print_r($sql);
     $res = $conexion->query($sql);
 }
     /*
