@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<!-- CABECERA !-->
+	<header>
+	 <meta charset="UTF-8">
+	 <title id="titulo">El Lector de Libros</title>
+
+	 <h1>El Lector de Libros</h1>
+	 <h2>Contando historias desde hace 100 años</h2>
+	<img src="img/logo.jpg" alt="logo ibreria">
+
+	</header>
+
+
+	<!-- INDICE NAVEGACION !-->
+	<nav>
+		<ul>
+			<li><a href="index.html"> Inicio</a></li>
+			<li><a href="catalogo.html">Catálogo</a></li>
+			<li><a href="busqueda.html"> Búsqueda</a></li>
+			<li><a href="tiendas.html"> Tiendas</a></li>
+			<li><a href="pedidos.html">Pedidos</a></li>
+		</ul>
+	</nav>
+
+
+	<!-- LATERAL !-->
+	<aside>
+		<section class="masvendidos">
+		Más vendidos
+		<ul>
+			<li>El Quijote</li>
+			<li>Ulises</li>
+			<li>Arguiñano Cocina</li>
+		</ul>
+		</section>
+
+		<section class="maspopulares">
+		Más populares
+		<ul>
+			<li>Charles Dicken</li>
+			<li>Julio Verne</li>
+			<li>Edgar Allan Poe</li>
+		</ul>
+		</section>
+	</aside>
+
+
+
+
+	<!-- CONTENIDO PRINCIPAL !-->
+	<main>
+		
+	<form action="procesar.php" method="get" id="pedidos">
+        
+        <fieldset>
+        <div class="datoslibro">
+        	<img src = "img/libro4.jpg" alt="libro4"/>
+        	<p>Titulo <span>Los números de la vida</span></p>
+        	<p>Autor <span>Kit Yates</span></p>
+        	<p>ISBN <span>9788417552947</span></p>
+        	<p>Editorial <span>Blackie books</span></p>
+        	<p>Año <span>2020</span></p>
+        	<p>¿Y si las matemáticas fueran la única forma de comprender cómo te sientes, de entender la sociedad, de intentar articular el mundo? De encontrar el mejor asiento en el tren y la cola más rápida en la frutería, de calmarte ante un diagnóstico médico inesperado, de aprender del desastre de Chernóbil o del juicio de Amanda Knox, de detener epidemias mortales y víctimas de errores judiciales, de estudiar nuestro pasado para ahorrarnos un futuro peor, de saber cuántos caracoles hay en un jardín. Esto último, preguntado por su hijo, empujó al prestigioso matemático Kit Yates a intentar buscar cómo explicar la magia aplicada de los números que describen nuestra vida y la del planeta. Todo en este planeta se puede articular mediante las matemáticas y, sin embargo, este no es un libro para matemáticos. Tampoco es un libro de matemáticas al uso. Es un libro sobre cómo nos ayudan a entender el mundo, la sociedad, la vida.</p>
+        	<p>PRECIO <span>20,81&euro;</span>
+
+        </div>
+        <div class="formulariopedidos">
+				
+	            <label>Nombre y Apellidos
+            	<input  name="nombre y apellidos" type = "text" required ></label>
+
+	            <label>Dirección de evio
+            	<textarea name="dirección de envio"></textarea></label>
+	            
+	            <label>Email
+            	<input  name="email" type = "email" required ></label>
+     
+            	<label>Número de tarjeta 
+            	<input name="tarjeta" type = "number" required></label>
+
+            	<label>Fecha de caducidad
+            	<input  name="fecha de caducidad" type = "date" required ></label>
+
+            	<label>CVC
+            	<input name="cvc" type = "number" required></label>
+
+     			<label>Marque si procede
+     			<input type="checkbox" id="cond1" name="acepta condiciones compra" required>
+  				<label for="cond1">He leído y acepto las condiciones de compra</label>
+
+     			<input type="checkbox" id="cond2" name="desea recibir novedades">
+  				<label for="cond2">Deseo recibir información sobre novedades</label>
+
+     			<input type="checkbox" id="cond3" name="envuelto regalo">
+  				<label for="cond3">Deseo el envio envuelto para regalo</label>
+  				</label>
+
+				<input type="submit" value="Hacer pedido"/>
+        </div>
+        </fieldset>
+	
+
+	</main>
+
+	
+	<!-- PIE DE PAGINA !-->
+	<footer>
+		
+		<section class="ubitelf">
+			<ul>
+			<li>Granada</li>
+				<ul>
+					<li>Reyes Católicos</li>
+					<li>Avd Dílar</li>
+				</ul>
+			<li>Málaga</li>
+				<ul>
+					<li>Marqués de Larios</li>
+				</ul>
+			</ul>
+		</section>
+
+
+		<section class="redesociales">
+			<a href="mailto:lectordelibros@gmail.com"><img src="img/correo-logo.jpg" alt="logo correo electronico"></a>
+			<a href="mailto:lectordelibros@gmail.com">lectordelibros@gmail.com</a>
+			<a href="https://facebook.com" ><img src="img/facebook-logo.jpg"  alt="logo facebook"></a>
+			<a href="https://instagram.com" ><img src="img/instagram-logo.jpg" alt="logo instagram"></a>
+			<a href="https://twitter.com" ><img src="img/twiter-logo.jpg" alt="logo twiter"></a>
+
+
+		</section>
+
+		<section class="otraspaginas">
+			<ul>
+				<li><a href="">La Empresa</a></li>
+				<li><a href="">Politica de envio</a></li>
+				<li><a href="">Preguntas frecuentes</a></li>
+				<li><a href="">Mapa del sitio</a></li>
+		</section>
+
+	</footer>
+
+</body>
+
+</html>

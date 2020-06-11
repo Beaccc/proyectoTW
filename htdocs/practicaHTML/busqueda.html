@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<!-- CABECERA !-->
+	<header>
+	 <meta charset="UTF-8">
+	 <title id="titulo">El Lector de Libros</title>
+
+	 <h1>El Lector de Libros</h1>
+	 <h2>Contando historias desde hace 100 años</h2>
+	<img src="img/logo.jpg" alt="logo ibreria">
+
+	</header>
+
+
+	<!-- INDICE NAVEGACION !-->
+	<nav>
+		<ul>
+			<li><a href="index.html"> Inicio</a></li>
+			<li><a href="catalogo.html">Catálogo</a></li>
+			<li><a href="busqueda.html"> Búsqueda</a></li>
+			<li><a href="tiendas.html"> Tiendas</a></li>
+			<li><a href="pedidos.html">Pedidos</a></li>
+		</ul>
+	</nav>
+
+
+	<!-- LATERAL !-->
+	<aside>
+		<section class="masvendidos">
+		Más vendidos
+		<ul>
+			<li>El Quijote</li>
+			<li>Ulises</li>
+			<li>Arguiñano Cocina</li>
+		</ul>
+		</section>
+
+		<section class="maspopulares">
+		Más populares
+		<ul>
+			<li>Charles Dicken</li>
+			<li>Julio Verne</li>
+			<li>Edgar Allan Poe</li>
+		</ul>
+		</section>
+	</aside>
+
+
+
+
+	<!-- CONTENIDO PRINCIPAL !-->
+	<main>
+		
+	<form action="procesar.php" method="get" id="busqueda">
+        
+        <fieldset>
+        <div class="formulariobusqueda">
+				<legend>Búsqueda</legend>
+				
+	            <label>Autor
+	            <input name="autor" type = "text" required ></label>
+            	
+
+	            <label>Titulo
+            	<input name="titulo" type = "text" required ></label>
+	            
+	            <label>ISBN
+	            <input name="isbn" type = "number" required ></label>
+            	
+     
+            	<label>Precio entre 
+            	<input name="precio_min" type = "number" required></label>
+            	<label> y </label>
+            	<input name="precio_max" type = "number" required></label>
+            	
+            	<label>Género</label>
+	            <select id = "listagenero" name="genero">
+				<option value  ="infantil">Infantil</option>
+				<option value = "ciecia ficcion y fantasia">Ciencia Ficción y Fantasía</option>
+				<option value = "novela romántica">Novela romántica</option>
+				<option value = "poesía">Poesía</option>
+				<option value = "comics">Comics</option>
+				</select>
+
+     			<label>Encuadernación
+  			    <input type="checkbox" name="tapa_dura" value="tapa_dura">Tapa dura
+  			    <input type="checkbox" name="tapa_blanda" value="tapa_blanda">Tapa blanca
+  			    <input type="checkbox" name="cualquiera" value="cualquiera">Cualquiera
+  			    </label>
+  			    
+				<input type="submit" value="Buscar"/>
+        </div>
+        </fieldset>
+	
+
+	</main>
+
+	
+	<!-- PIE DE PAGINA !-->
+	<footer>
+		
+		<section class="ubitelf">
+			<ul>
+			<li>Granada</li>
+				<ul>
+					<li>Reyes Católicos</li>
+					<li>Avd Dílar</li>
+				</ul>
+			<li>Málaga</li>
+				<ul>
+					<li>Marqués de Larios</li>
+				</ul>
+			</ul>
+		</section>
+
+
+		<section class="redesociales">
+			<a href="mailto:lectordelibros@gmail.com"><img src="img/correo-logo.jpg" alt="logo correo electronico"></a>
+			<a href="mailto:lectordelibros@gmail.com">lectordelibros@gmail.com</a>
+			<a href="https://facebook.com" ><img src="img/facebook-logo.jpg"  alt="logo facebook"></a>
+			<a href="https://instagram.com" ><img src="img/instagram-logo.jpg" alt="logo instagram"></a>
+			<a href="https://twitter.com" ><img src="img/twiter-logo.jpg" alt="logo twiter"></a>
+
+
+		</section>
+
+		<section class="otraspaginas">
+			<ul>
+				<li><a href="">La Empresa</a></li>
+				<li><a href="">Politica de envio</a></li>
+				<li><a href="">Preguntas frecuentes</a></li>
+				<li><a href="">Mapa del sitio</a></li>
+		</section>
+
+	</footer>
+
+</body>
+
+</html>
