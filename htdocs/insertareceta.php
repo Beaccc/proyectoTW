@@ -48,7 +48,7 @@ if($res) {
     $date = date('Y-m-d H:i:s');
     $sql = "INSERT INTO log VALUES (null,'$date',$descripcion)";
     $res = $conexion->query($sql);
-}
+
 
     echo("<script>
          alert('La receta, $titulo, se ha añadido correctamente.');
