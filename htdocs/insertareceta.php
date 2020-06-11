@@ -49,7 +49,7 @@ if($res) {
     $sql = "INSERT INTO log VALUES (null,'$date',$descripcion)";
     $res = $conexion->query($sql);
 }
-    /*
+
     echo("<script>
          alert('La receta, $titulo, se ha añadido correctamente.');
          window.location.replace('../index_privado.php');
@@ -61,6 +61,6 @@ else{
     alert('No hemos podido añadir la receta, por favor intentalo más tarde.');
     window.location.replace('../index_privado.php');
      </script>");
-}*/
+}
 
 ?>
